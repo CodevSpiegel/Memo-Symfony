@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo Symfony</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+<div id="content">
+    
+    <h1><a href="../index.html">Memo Symfony</a></h1>
+    <h2>Créer une nouvelle page</h2>
+
+    <h4>Lancer GitBash dans le répertoire ou sera crée le nouveau projet (ex: C:\wamp64\www)</h4>
+    <ul>
+        <li>
+            Remplacer "<i>my_project_directory</i>" par le nom de votre nouveau dossier/projet, puis lancer la commande :
+            <pre class="">symfony new my_project_directory --version="7.0.*" --webapp</pre>
+         </li>
+         <li>
+            Se rendre dans le dossier nouvellement crée :
+            <pre class="">cd my_project_directory/</pre>
+         </li>
+         <li>
+            Indiquer (par prudence) quelle version de PHP sera utilisée :
+            <pre class="">echo 8.2 > .php-version</pre>
+         </li>
+         <li>
+            Démarrer le serveur local PHP de Symfony :
+            <pre class="">symfony server:start</pre>
+        </li>
+        <li>
+            Se rendre à l'adresse web local du nouveau projet (en principe 127.0.0.1:8000) :
+            <pre class="">http://127.0.0.1:8000</pre>
+        </li>
+    </ul>
+    
+</div>
+
+</body>
+</html>

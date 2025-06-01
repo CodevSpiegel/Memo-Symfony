@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo Symfony</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+<div id="content">
+    
+    <h1><a href="../index.html">Memo Symfony</a></h1>
+    <h2>Installation de l'environement</h2>
+
+    <h4>WampServer</h4>
+    <ul>
+        <li>
+            WampServer est une plate-forme de développement Web sous Windows pour des applications Web dynamiques à l’aide du serveur Apache2, du langage de scripts PHP et d’une base de données MySQL. Il possède également PHPMyAdmin pour gérer plus facilement vos bases de données.<br>
+            Télécharger <a href="https://www.wampserver.com/" target="_blank">WampServer</a>
+        </li>
+        <li>
+            Pour que WampServer fonctionne sous Windows il faut installer les Paquetages <a href="https://wampserver.aviatechno.net/?lang=fr&prerequis=afficher" target="_blank">VC++</a><br>
+            Télécharger <a href="https://aka.ms/vs/17/release/VC_redist.x86.exe">Visual C++ Redistributable Packages for Visual Studio 2015-2022 x86</a><br>
+            Télécharger <a href="https://aka.ms/vs/17/release/VC_redist.x64.exe">Visual C++ Redistributable Packages for Visual Studio 2015-2022 x64</a>
+        </li>
+        <li>
+            Configurer les variables d'environement pour WampServer<br>
+            Dans Windows Faire "Recherche" > "Modifier les variables d'environnement système" > Cliquer sur "Variables d'environnement" ><br>
+            Dans "la liste des Variables système" > Double cliquer sur la ligne "Path" puis verifier qu'il y a bien "C:\wamp64\bin\php\php8.2.0". (sinon l'ajouter)
+        </li>
+    </ul>
+
+    <br><br>
+
+    <h4>Télecharger et installer Composer</h4>
+    <ul>
+        <li>Composer est un gestionnaire de dépendances pour PHP. Il permet d’ajouter et de gérer des dépendances. C’est-à-dire des librairies externes, déjà codées par d’autre développeurs et que l'on peux intégrer à ses projets.
+            > <a href="https://getcomposer.org/download/" target="_blank">Télécharger Composer</a>
+        </li>
+    </ul>
+
+    <br><br>
+
+    <h4>Installer Scoop & Symfony CLI</h4>
+    <ul>
+        <li>Ouvrir le Terminal Windows PowerShell. Lancer cette première ligne de commande :
+            <pre class="">Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser</pre>
+        </li>
+        <li>Puis lancer cette seconde ligne de commande :
+            <pre class="">Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression</pre>
+        </li>
+        <li>Ensuite installer Symfony CLI :
+            <pre class="">scoop install symfony-cli</pre>
+        </li>
+    </ul>
+
+    <br><br>
+
+    <h4>Verifications de l'installation avec GitBash:</h4>
+    <ul>
+        
+        <li>
+            Tester Composer
+            <pre class="">composer</pre>
+        </li>
+        <li>
+            Tester PHP
+            <pre class="">php -v</pre>
+        </li>
+        <li>
+            Tester Symfony
+            <pre class="">symfony check:requirements</pre>
+        </li>
+    </ul>
+
+    <br><br>
+
+    <h4>Télecharger et installer l'IDE Visual Studio Code</h4>
+    <ul>
+        <li>
+            <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a>
+        </li>
+    </ul>
+
+    <br><br><br><br>
+
+</div>
+
+</body>
+</html>
+

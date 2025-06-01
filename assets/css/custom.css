@@ -1,0 +1,28 @@
+h1, h2 {
+    margin: 20px 0;
+    
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+
+
+#content {
+    margin-left: 20px;
+}
+
+pre {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 0;
+    margin-bottom: 2.4rem;
+    background-color: #e6e6e6;
+    display: block;
+}
